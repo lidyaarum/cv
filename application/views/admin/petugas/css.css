@@ -1,0 +1,13 @@
+.wew {
+
+  font-style:italic;
+  color:white;
+
+}
+body
+{
+	background-image:url('foto/roronoa.jpg');
+	background-repeat:no-repeat;
+	background-position:220px 51px;
+	background-size:1150px 640px;
+}
