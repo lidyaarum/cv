@@ -25,24 +25,12 @@ class Biodata_model extends CI_Model
             'label' => 'Email',
             'rules' => 'required'],
 
-            ['field' => 'location',
-            'label' => 'Location',
-            'rules' => 'required'],
-
-            ['field' => 'phone',
-            'label' => 'Phone',
-            'rules' => 'required'],
-
-            ['field' => 'religion',
-            'label' => 'Religion',
-            'rules' => 'required'],
-
             ['field' => 'resume',
             'label' => 'Resume',
             'rules' => 'required'],
 
-            ['field' => 'sex',
-            'label' => 'Sex',
+            ['field' => 'gender',
+            'label' => 'Gender',
             'rules' => 'required']
         ];
     }
@@ -65,14 +53,11 @@ class Biodata_model extends CI_Model
         $this->place    = $post["place"];
         $this->date     = $post["date"];
         $this->address  = $post["address"];
-        $this->moto     = $post["moto"];
         $this->email    = $post["email"];
-        $this->location = $post["location"];
-        $this->phone    = $post["phone"];
-        $this->religion = $post["religion"];
+        $this->gender      = $post["gender"];
         $this->resume   = $post["resume"];
-        $this->sex      = $post["sex"];
-        $this->foto     = $this->_uploadImage();
+
+       
         $this->db->insert('biodata', $this);
     }
 
@@ -84,19 +69,9 @@ class Biodata_model extends CI_Model
         $this->place    = $post["place"];
         $this->date     = $post["date"];
         $this->address  = $post["address"];
-        $this->moto     = $post["moto"];
         $this->email    = $post["email"];
-        $this->location = $post["location"];
-        $this->phone    = $post["phone"];
-        $this->religion = $post["religion"];
+        $this->gender      = $post["gender"];
         $this->resume   = $post["resume"];
-        $this->sex      = $post["sex"];
-
-        if (!empty($_FILES["foto"]["name"])) {
-            $this->foto = $this->_uploadImage();
-        } else {
-            $this->foto = $post["old_image"];
-        }
 
         $this->db->update('biodata', $this, array('id' => $post['id']));
         
@@ -107,22 +82,22 @@ class Biodata_model extends CI_Model
         return $this->db->delete('biodata', array("id" => $id));
     }
 
-    private function _uploadImage()
-    {
-        $config['upload_path']          = './assets/img/about/';
-        $config['allowed_types']        = 'gif|jpg|png';
-        $config['file_name']            = $this->id;
-        $config['overwrite']			= true;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
-        // $config['max_height']           = 768;
+    // private function _uploadImage()
+    // {
+    //     $config['upload_path']          = './assets/img/about/';
+    //     $config['allowed_types']        = 'gif|jpg|png';
+    //     $config['file_name']            = $this->id;
+    //     $config['overwrite']			= true;
+    //     $config['max_size']             = 1024; // 1MB
+    //     // $config['max_width']            = 1024;
+    //     // $config['max_height']           = 768;
 
-        $this->load->library('upload', $config);
+    //     $this->load->library('upload', $config);
 
-        if ($this->upload->do_upload('foto')) {
-            return $this->upload->data("file_name");
-        }
+    //     if ($this->upload->do_upload('foto')) {
+    //         return $this->upload->data("file_name");
+    //     }
         
-        return "default.jpg";
-    }
+    //     return "default.jpg";
+    // }
 }

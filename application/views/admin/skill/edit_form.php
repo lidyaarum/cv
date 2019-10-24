@@ -29,7 +29,7 @@
                 <input type="hidden" name="id" value="<?php echo $skill->id ?>" />
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input value="<?php echo $skill->name ?>" type="text" class="form-control <?php echo form_error('nama') ? 'is-invalid':'' ?>" id="nama" placeholder="Nama" name="nama">
+                    <input value="<?php echo $skill->name ?>" type="text" class="form-control <?php echo form_error('nama') ? 'is-invalid':'' ?>" id="nama" placeholder="Nama" name="name">
                     <div class="invalid-feedback">
                         <?php echo form_error('name') ?>
                     </div>
@@ -37,8 +37,8 @@
                 
                   </div>
                   <div class="form-group">
-                    <label for="persen">Persen</label>
-                    <textarea class="form-control <?php echo form_error('persen') ? 'is-invalid':'' ?>" id="editor1" style="width: 100%" name="persen"><?php echo $skill->persen ?></textarea>
+                    <label for="Persen">Persen</label>
+                    <input value="<?php echo $skill->persen ?>" type="text" class="form-control <?php echo form_error('persen') ? 'is-invalid':'' ?>" id="persen" placeholder="Persen" name="persen">
                     <div class="invalid-feedback">
                         <?php echo form_error('persen') ?>
                     </div>

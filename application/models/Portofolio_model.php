@@ -9,7 +9,6 @@ class Portofolio_model extends CI_Model
     public $katagori;
     public $link;
     public $foto = "default.jpg";
-    public $perubahan;
 
     public function rules()
     {

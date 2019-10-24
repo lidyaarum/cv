@@ -28,8 +28,8 @@
                 <div class="card-body">
                 <input type="hidden" name="id" value="<?php echo $education->education_id ?>" />
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input value="<?php echo $education->name ?>" type="text" class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>" id="nama" placeholder="Nama" name="nama">
+                    <label>Name</label>
+                    <input value="<?php echo $education->name ?>" type="text" class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>" id="name" placeholder="Name" name="name">
                     <div class="invalid-feedback">
                         <?php echo form_error('name') ?>
                     </div>

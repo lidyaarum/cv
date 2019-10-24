@@ -48,7 +48,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                     </div>
-                    <input type="text" value="<?php echo $biodata->date ?>" class="form-control <?php echo form_error('date') ? 'is-invalid':'' ?>" data-inputmask="'alias': 'dd-mm-yyyy'" name="date" data-mask>
+                    <input type="text" value="<?php echo $biodata->date ?>" class="form-control <?php echo form_error('date') ? 'is-invalid':'' ?>" data-inputmask="'alias': 'dd-mm-yyyy'" name="date">
                     <div class="invalid-feedback">
                         <?php echo form_error('date') ?>
                     </div>

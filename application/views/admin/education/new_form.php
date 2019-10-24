@@ -29,7 +29,7 @@
 
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>" id="nama" placeholder="Nama Pendidikan" name="nama">
+                    <input type="text" class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>" id="nama" placeholder="Nama Pendidikan" name="name">
                     <div class="invalid-feedback">
                         <?php echo form_error('name') ?>
                     </div>

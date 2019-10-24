@@ -6,7 +6,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['admin']             = 'admin/biodata';
+$route['admin']             = 'login';
 $route['admin/biodata']     = 'admin/biodata';
 $route['admin/education']   = 'admin/education';
 $route['admin/experiencce'] = 'admin/experiencce';

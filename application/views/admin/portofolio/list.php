@@ -45,7 +45,9 @@
                     <td><?php echo $port->name ?></td>
                     <td><?php echo $port->katagori ?></td>
                     <td><?php echo $port->link ?></td>
-                    <td><?php echo $port->foto ?></td>
+                    <td>
+                        <img style="width: 445px" src="<?= base_url('assets/images/blog/') . $port->foto ?>" alt="">
+                    </td>
                     <td>
                         <a class="btn btn-warning" href="<?php echo site_url('admin/portofolio/edit/'.$port->portofolio_id) ?>">
                             <i class="fa fa-edit"></i> 

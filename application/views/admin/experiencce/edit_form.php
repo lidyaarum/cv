@@ -29,7 +29,7 @@
                 <input type="hidden" name="id" value="<?php echo $experiencce->experiencce_id ?>" />
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input value="<?php echo $experiencce->name ?>" type="text" class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>" id="name" placeholder="Nama" name="nama">
+                    <input value="<?php echo $experiencce->name ?>" type="text" class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>" id="name" placeholder="Nama" name="name">
                     <div class="invalid-feedback">
                         <?php echo form_error('name') ?>
                     </div>

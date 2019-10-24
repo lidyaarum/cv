@@ -42,7 +42,7 @@ class Skill extends CI_Controller
         
         if ($validation->run()) {
             $skill->update();
-            $this->session->set_flashdata('success', 'Data Skill Berhasil dirubah');            
+            $this->session->set_flashdata('success', 'Data Skill Berhasil dirubah');
             redirect(site_url('admin/skill'));
             
         }

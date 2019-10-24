@@ -6,13 +6,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title> Lidya A </title>
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/animate.min.css" rel="stylesheet"> 
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/css/lightbox.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link id="assets/css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link href=<?= base_url('assets/css/bootstrap.min.css');?> rel="stylesheet">
+  <link href=<?= base_url('assets/css/animate.min.css');?> rel="stylesheet"> 
+  <link href=<?= base_url('assets/css/font-awesome.min.css');?> rel="stylesheet">
+  <link href=<?= base_url('assets/css/lightbox.css');?> rel="stylesheet">
+  <link href=<?= base_url('assets/css/main.css');?> rel="stylesheet">
+  <link id="css-preset" href="<?= base_url('assets/css/presets/preset1.css')?>" rel="stylesheet">
+  <link href=<?= base_url('assets/css/responsive.css');?>rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -20,7 +20,7 @@
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="shortcut icon" href=<?= base_url('assets/images/favicon.ico');?>>
 </head><!--/head-->
 
 <body>
@@ -34,11 +34,7 @@
       <div class="carousel-inner">
         <div class="item active" style="background-image: url(assets/images/slider/1.jpg)">
           <div class="caption">
-
-          <a class="btn btn-danger" href="<?php echo site_url('login' )?>">
-                        <i class="fa fa-edit"></i> Login
-                        </a>          
-<h1 class="animated fadeInLeftBig">Welcome to <span>my web</span></h1>
+            <h1 class="animated fadeInLeftBig">Welcome to <span>my web</span></h1>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
           </div>
         </div>
@@ -122,7 +118,7 @@
           </div>
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
-              <img class="img-responsive" src="assets/images/1.jpg" alt="">
+              <img class="img-responsive" src="<?= base_url('assets/images/1.jpg')?>" alt="">
           </div>
         </div>
       </div>
@@ -211,7 +207,7 @@
                   </div>
                   <div class="folio-overview">
                     <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="assets/images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                   </div>
                 </div>
               </div>
@@ -305,7 +301,7 @@
               <div class="row">
                 <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
                   <div class="post-thumb">
-                    <a href="#"><img class="assets/img-responsive" src="assets/images/blog/2.png" alt=""></a> 
+                    <a href="#"><img class="img-responsive" src="<?= base_url('assets/images/blog/2.png')?>" alt=""></a>
                     <div class="post-meta">
                       <span><i class="fa fa-comments-o"></i> 3 Comments</span>
                       <span><i class="fa fa-heart"></i> 0 Likes</span> 
@@ -417,16 +413,16 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="assets/js/jquery.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/jquery.js');?>></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/bootstrap.min.js');?>></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="assets/js/wow.min.js"></script>
-  <script type="text/javascript" src="assets/js/mousescroll.js"></script>
-  <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/jquery.inview.min.js');?>></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/wow.min.js');?>></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/mousescroll.js');?>></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/smoothscroll.js');?>></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/jquery.countTo.js');?>></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/lightbox.min.js');?>></script>
+  <script type="text/javascript" src=<?= base_url('assets/js/main.js');?>></script>
 
 </body>
 </html>

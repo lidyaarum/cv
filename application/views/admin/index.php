@@ -28,7 +28,7 @@
 		}
 		?>
 		<div class="panel panel-default">
-			<form action="login_act.php" method="post">
+			<form action="admin/login_act.php" method="post">
 				<div class="col-md-4 col-md-offset-4 kotak">
 					<h3>Admin Login</h3>
 					<div class="input-group">

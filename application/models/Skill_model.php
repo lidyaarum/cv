@@ -12,7 +12,7 @@ class Skill_model extends CI_Model
           
 
             ['field' => 'persen',
-            'label' => 'Keterangan',
+            'label' => 'Persen',
             'rules' => 'required']
         ];
     }
@@ -41,8 +41,7 @@ class Skill_model extends CI_Model
     {
         $post = $this->input->post();
         $this->name         = $post["name"];
-    
-        $this->persen   = $post["persen"];
+        $this->persen       = $post["persen"];
         $this->db->update('skill', $this, array('id' => $post['id']));        
     }
 
