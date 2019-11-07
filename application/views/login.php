@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login awokawokawok</title>
+	<title>Login </title>
 </head>
 <body>
 	<form action="<?php echo base_url('login/aksi_login'); ?>" method="post">		

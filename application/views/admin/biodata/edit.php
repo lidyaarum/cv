@@ -88,22 +88,16 @@
                         <option value="Male">Laki-Laki</option>
                     </select>
                 </div>
-<!--                             
-                  <div class="form-group">
-                    <label for="foto">Foto</label>
-                    <img class="img-bordered-sm" style="height: auto;width: 30%;" src="<?php echo base_url('assets/img/about/'. $biodata->foto ) ?>" alt="user image">
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="hidden" name="old_image" value="<?php echo $biodata->foto ?>" />
-                        <input type="file" class="custom-file-input <?php echo form_error('foto') ? 'is-invalid':'' ?>" id="foto" name="foto">
-                        <label class="custom-file-label" for="foto">Choose file</label>
-                        <div class="invalid-feedback">
-                            <?php echo form_error('foto') ?>
-                        </div>
+ 
+                <div class="form-group">
+                      <label for="Foto">Foto</label>
+                      <input id="foto" type="file" name="foto" class="form-control">
+                      <input type="hidden"id="foto" name="old_image" value="<?php echo $biodata->foto ?>"/>
+                      <label class="custom-file-label" for="foto">Choose file</label>
+                      <div class="invalid-feedback">
+                          <?php echo form_error('foto') ?>
                       </div>
-                    </div>
-                  </div>
-                </div> -->
+                </div> 
                 <!-- /.card-body -->
 
                 <div class="card-footer">

@@ -37,7 +37,8 @@
                     <th>Email</th>
                     <th>Address</th>
                     <th>Gender </th>
-                    <th>Resume</th>                    
+                    <th>Resume</th>
+                    <th>Foto</th>                    
                     <th>
 
                 </tr>
@@ -51,6 +52,10 @@
                     <td><?php echo $bio->address ?></td>
                     <td><?php echo $bio->gender ?></td>
                     <td><?php echo $bio->resume ?></td>
+
+                    <td>
+                        <img style="width: 50%" src="<?= base_url('assets/images/').$bio->foto ?>" alt="">
+                    </td>
                     <td>
                         <a class="btn btn-danger" href="<?php echo site_url('admin/biodata/edit/'.$bio->id) ?>">
                         <i class="fa fa-edit"></i> Edit

@@ -49,7 +49,7 @@ class Biodata extends CI_Controller
         $data["biodata"] = $biodata->getById($id);
         if (!$data["biodata"]) show_404();
         //var_dump();
-        $this->load->view("admin/biodata/edit_form", $data);
+        $this->load->view("admin/biodata/edit", $data);
     }
 
     public function delete($id=null)
